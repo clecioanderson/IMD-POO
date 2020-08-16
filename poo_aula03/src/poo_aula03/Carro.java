@@ -12,80 +12,80 @@ import java.time.Clock;
  * @author clecioferreira
  */
 public class Carro {
-        String tipo;
-	String cor;
-	String placa;
-	int numPortas;
-        String marca;
-        int modelo;
-        int anoFabricacao;
-        String tipoComb;
-        int cambio;
-        Pessoa dono;
+        private String tipo;
+	private String cor;
+	private String placa;
+	private int numPortas;
+        private String marca;
+        private int modelo;
+        private int anoFabricacao;
+        private String tipoComb;
+        private int cambio;
+        private Pessoa dono;
         
-        Pessoa getDono(){
+        public Pessoa getDono(){
             return dono;
         }
-        void setDono(Pessoa dono){
+        public void setDono(Pessoa dono){
             this.dono = dono;
         }
 
-	void setCor(String c){
+	public void setCor(String c){
 		cor = c;
 	}		
-	String getCor(){
+	public String getCor(){
 		return cor;
 	}
 
-	String getTipo(){
+	public String getTipo(){
 		return tipo;
 	}
 
-	void setTipo(String tipo){
+	public void setTipo(String tipo){
 		this.tipo = tipo;
 	}
 
-	String getPlaca(){
+	public String getPlaca(){
 		return placa;
 	}
-	void setPlaca(String placa){
+	public void setPlaca(String placa){
 		this.placa = placa;
 	}
 
-	int getNumPortas(){
+	public int getNumPortas(){
 		return numPortas;
 	}
-	void setNumPortas(int numPortas){
+	public void setNumPortas(int numPortas){
 		this.numPortas = numPortas;
 	}
-        int getModelo(){
+        public int getModelo(){
 		return modelo;
 	}
-        String getMarca(){
+        public String getMarca(){
 		return marca;
 	}
-        int getAnoFabricacao(){
+        public int getAnoFabricacao(){
 		return anoFabricacao;
 	}
-        String getTipComb(){
+        public String getTipComb(){
 		return tipoComb;
 	}
-        void ligar(){
+        public void ligar(){
             System.out.println("carro ligado.");
         }
-        void desligar(){
+        public void desligar(){
             System.out.println("carro desligado.");
         }
-        void acelerar(){
+        public void acelerar(){
             System.out.println("carro acelerando.");
         }
-        void frear(){
+        public void frear(){
             System.out.println("carro freando.");
         }
-        void setCambio(int marcha){
+        public void setCambio(int marcha){
             this.cambio = marcha;
         }
-        int getCambio(){
+        public int getCambio(){
             return this.cambio;
         }
         Carro(){

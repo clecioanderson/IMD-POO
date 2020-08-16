@@ -10,32 +10,32 @@ package poo_aula03;
  * @author clecioferreira
  */
 public class Pessoa {
-    String nome;
-    int idade;
-    String sexo;
-    Carro carro;
+    private String nome;
+    private int idade;
+    private String sexo;
+    private Carro carro;
     
-    Carro getCarro(){
+    public Carro getCarro(){
         return carro;
     }
     
-    void setCarro(Carro carro){
+    public void setCarro(Carro carro){
         this.carro = carro;
     }
     
-    void ligarCarro(){
+    public void ligarCarro(){
         carro.ligar();
     }
-    void desligarCarro(){
+    public void desligarCarro(){
         carro.desligar();
     }
-    void acelerarCarro(){
+    public void acelerarCarro(){
         carro.acelerar();
     }
-    void frearCarro(){
+    public void frearCarro(){
         carro.frear();
     }
-    void setCambioCarro(int n){
+    public void setCambioCarro(int n){
         carro.setCambio(n);
     }
     public void setNome(String n){
