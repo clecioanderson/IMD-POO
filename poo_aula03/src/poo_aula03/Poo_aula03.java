@@ -22,20 +22,27 @@ public class Poo_aula03 {
 		*/
 
 		System.out.println("Meu primeiro programa java\n");
-
+                
+                Pessoa pessoa1 = new Pessoa("Clecio", "M", 33);
+                Pessoa pessoa2 = new Pessoa("Karen", "F", 26);
+                Pessoa pessoa3 = new Pessoa("Gress", "F", 72);
+                
 		Carro meuCarro = new Carro();
 		meuCarro.setCor("preto");
 		meuCarro.setNumPortas(4);
 		meuCarro.setPlaca("MHX 1234");
 		meuCarro.setTipo("esportivo");
+                meuCarro.setDono(pessoa1);
                 
                 Carro meuCarro2 = new Carro();
 		meuCarro2.setCor("vermelho");
 		meuCarro2.setNumPortas(4);
 		meuCarro2.setPlaca("MHX 4321");
 		meuCarro2.setTipo("deluxe");
+                meuCarro2.setDono(pessoa2);
                 
                 Carro meuCarro3 = new Carro(2020,"Ford",2019);
+                meuCarro3.setDono(pessoa3);
 
 		System.out.println("Cor: "+meuCarro.getCor());
 		System.out.println("Número de portas: "+meuCarro.getNumPortas());
@@ -45,6 +52,7 @@ public class Poo_aula03 {
                 System.out.println("Marca: "+meuCarro.getMarca());
                 System.out.println("Ano Fabricacao: "+meuCarro.getAnoFabricacao());
                 System.out.println("Combustivel: "+meuCarro.getTipComb());
+                System.out.println("Pertence a: "+meuCarro.getDono().getNome());
                 System.out.println("---------- | |----------- || ------");
                 System.out.println("Cor: "+meuCarro2.getCor());
 		System.out.println("Número de portas: "+meuCarro2.getNumPortas());
@@ -54,6 +62,7 @@ public class Poo_aula03 {
                 System.out.println("Marca: "+meuCarro2.getMarca());
                 System.out.println("Ano Fabricacao: "+meuCarro2.getAnoFabricacao());
                 System.out.println("Combustivel: "+meuCarro2.getTipComb());
+                System.out.println("Pertence a: "+meuCarro2.getDono().getNome());
                 System.out.println("---------- | |----------- || ------");
                 System.out.println("Cor: "+meuCarro3.getCor());
 		System.out.println("Número de portas: "+meuCarro3.getNumPortas());
@@ -62,7 +71,8 @@ public class Poo_aula03 {
                 System.out.println("Modelo: "+meuCarro3.getModelo());
                 System.out.println("Marca: "+meuCarro3.getMarca());
                 System.out.println("Ano Fabricacao: "+meuCarro3.getAnoFabricacao());
-                System.out.println("Combustivel: "+meuCarro3.getTipComb());
+                System.out.println("Combustivel: "+meuCarro3.getTipComb());               
+                System.out.println("Pertence a: "+meuCarro3.getDono().getNome());
     }
     
 }

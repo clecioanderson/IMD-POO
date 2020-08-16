@@ -18,6 +18,14 @@ public class Carro {
         int modelo;
         int anoFabricacao;
         String tipoComb;
+        Pessoa dono;
+        
+        Pessoa getDono(){
+            return dono;
+        }
+        void setDono(Pessoa dono){
+            this.dono = dono;
+        }
 
 	void setCor(String c){
 		cor = c;
