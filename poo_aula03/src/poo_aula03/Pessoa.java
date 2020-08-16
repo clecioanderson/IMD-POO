@@ -13,7 +13,31 @@ public class Pessoa {
     String nome;
     int idade;
     String sexo;
+    Carro carro;
     
+    Carro getCarro(){
+        return carro;
+    }
+    
+    void setCarro(Carro carro){
+        this.carro = carro;
+    }
+    
+    void ligarCarro(){
+        carro.ligar();
+    }
+    void desligarCarro(){
+        carro.desligar();
+    }
+    void acelerarCarro(){
+        carro.acelerar();
+    }
+    void frearCarro(){
+        carro.frear();
+    }
+    void setCambioCarro(int n){
+        carro.setCambio(n);
+    }
     public void setNome(String n){
         this.nome = n;
     }

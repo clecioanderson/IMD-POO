@@ -5,6 +5,8 @@
  */
 package poo_aula03;
 
+import java.time.Clock;
+
 /**
  *
  * @author clecioferreira
@@ -18,6 +20,7 @@ public class Carro {
         int modelo;
         int anoFabricacao;
         String tipoComb;
+        int cambio;
         Pessoa dono;
         
         Pessoa getDono(){
@@ -67,6 +70,24 @@ public class Carro {
         String getTipComb(){
 		return tipoComb;
 	}
+        void ligar(){
+            System.out.println("carro ligado.");
+        }
+        void desligar(){
+            System.out.println("carro desligado.");
+        }
+        void acelerar(){
+            System.out.println("carro acelerando.");
+        }
+        void frear(){
+            System.out.println("carro freando.");
+        }
+        void setCambio(int marcha){
+            this.cambio = marcha;
+        }
+        int getCambio(){
+            return this.cambio;
+        }
         Carro(){
             this.modelo = 2010;
             this.marca = "JEEP";

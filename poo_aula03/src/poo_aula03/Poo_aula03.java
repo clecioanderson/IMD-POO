@@ -26,6 +26,7 @@ public class Poo_aula03 {
                 Pessoa pessoa1 = new Pessoa("Clecio", "M", 33);
                 Pessoa pessoa2 = new Pessoa("Karen", "F", 26);
                 Pessoa pessoa3 = new Pessoa("Gress", "F", 72);
+                Pessoa pessoa4 = new Pessoa("Mahjong", "F", 88);
                 
 		Carro meuCarro = new Carro();
 		meuCarro.setCor("preto");
@@ -43,6 +44,8 @@ public class Poo_aula03 {
                 
                 Carro meuCarro3 = new Carro(2020,"Ford",2019);
                 meuCarro3.setDono(pessoa3);
+                
+                Carro meuCarro4 = new Carro(2020,"Troller",2019);
 
 		System.out.println("Cor: "+meuCarro.getCor());
 		System.out.println("Número de portas: "+meuCarro.getNumPortas());
@@ -73,6 +76,26 @@ public class Poo_aula03 {
                 System.out.println("Ano Fabricacao: "+meuCarro3.getAnoFabricacao());
                 System.out.println("Combustivel: "+meuCarro3.getTipComb());               
                 System.out.println("Pertence a: "+meuCarro3.getDono().getNome());
+                meuCarro4.setDono(pessoa4);
+                pessoa4.setCarro(meuCarro4);
+                System.out.println("------ Test Drive-------");
+                System.out.println("Teste realizado por: "+meuCarro4.getDono().getNome());
+                
+                pessoa4.ligarCarro();
+                pessoa4.setCambioCarro(1);
+                pessoa4.acelerarCarro();
+                pessoa4.setCambioCarro(2);
+                pessoa4.acelerarCarro();
+                pessoa4.setCambioCarro(3);
+                pessoa4.acelerarCarro();
+                pessoa4.setCambioCarro(2);
+                pessoa4.frearCarro();
+                pessoa4.setCambioCarro(1);
+                pessoa4.frearCarro();
+                pessoa4.setCambioCarro(0);
+                pessoa4.frearCarro();
+                pessoa4.desligarCarro();
+                
     }
     
 }
