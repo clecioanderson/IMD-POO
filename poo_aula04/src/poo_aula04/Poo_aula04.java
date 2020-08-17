@@ -33,6 +33,5 @@ public class Poo_aula04 {
         agenda2.anotacao="Independencia do Brasil";
         agenda2.mostraAnotacao();
         **/
-    }
-    
+    }    
 }
