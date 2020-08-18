@@ -15,7 +15,8 @@ public class Poo_aula08_auto_05 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        TestaTudo t = new TestaTudo();
+        t.main();
     }
     
 }
