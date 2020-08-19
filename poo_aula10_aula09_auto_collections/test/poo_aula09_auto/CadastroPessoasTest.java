@@ -5,6 +5,8 @@
  */
 package poo_aula09_auto;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -43,7 +45,7 @@ public class CadastroPessoasTest {
     @Test
     public void testCadastrarPessoa() {
         System.out.println("cadastrarPessoa");
-        Pessoa[] p = null;
+        List <Pessoa> p = null;
         int q = 0;
         CadastroPessoas instance = new CadastroPessoas();
         instance.cadastrarPessoa(p, q);
@@ -57,7 +59,7 @@ public class CadastroPessoasTest {
     @Test
     public void testMostraCadastro() {
         System.out.println("mostraCadastro");
-        Pessoa[] p = null;
+        List <Pessoa> p = null;
         CadastroPessoas instance = new CadastroPessoas();
         instance.mostraCadastro(p);
         // TODO review the generated test code and remove the default call to fail.
