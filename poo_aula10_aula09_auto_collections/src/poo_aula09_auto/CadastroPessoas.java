@@ -90,7 +90,8 @@ public class CadastroPessoas {
                 mostraCadastro(ps);
                 break;
             default:
-                System.out.println("Programa encerrado!");
+                System.out.println("Programa encerrado!\n");
+                System.out.println("O programa armazenou "+ps.size()+" registros!");
                 break;
             }
         }
