@@ -49,12 +49,12 @@ public class CadastroPessoas {
         int escolha = -1;       
         System.out.println("\nDefina o tamanho da sua base de dados: ");
         //Operador Ternario para testar o dbSize
-        int dbSize = leitor.nextInt();
-        dbSize = (dbSize % 4 == 0) ? dbSize:4;
+        int dbSize = leitor.nextInt(); //Definir o tamanho do vetor que armazenara as pessoas
+        dbSize = (dbSize % 4 == 0) ? dbSize:4; // Garantir que caso o numero informado não seja multiplo de 4 seja definido 4 como tamanho do vetor
         //Operador Ternario para testar o tipoPessoa
         Pessoa ps[] = new Pessoa[dbSize];
         int indexVetor = 0;
-        int tipoPessoa = dbSize/4;
+        int tipoPessoa = dbSize/4; // Dividir por tipo de registro os cadastros disponiveis com base no tamanho do vetor, nesse caso 4 tipos diferentes de cadastro
         while (escolha != 0 || counter < dbSize){
             System.out.println("\nEscolha a opção desejada: ");
             System.out.println("1 - Cadastrar Pessoa");
@@ -69,8 +69,8 @@ public class CadastroPessoas {
                 indexVetor = 0;
                 while (indexVetor <= tipoPessoa - 1){
                     ps[counter] = new Pessoa();
-                    counter++;
-                    indexVetor++;
+                    counter++; //contador para o vetor pessoas
+                    indexVetor++; //contador para garantir que cada tipo de cadastro nao exceda o maximo por tipo de registro
                 }
                 break;
             case 2:
